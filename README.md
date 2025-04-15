@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sustainity – Sustainability Dashboard 🌱
 
-## Getting Started
+## 🚀 Setup Instructions
 
-First, run the development server:
+To run the project locally:
 
 ```bash
+git clone <your-repo-url>
+cd <project-folder>
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+## Challenges I Faced
+- I hadn’t been coding or building websites for the past 3 months, so I had to refresh a lot of things I previously knew.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- I had never visualized data in a frontend app before, so working with Chart.js and integrating it was completely new for me.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Handling dynamic CSV uploads with unknown structure was a big challenge. I needed a flexible and general approach to work with any dataset users might upload.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## My Approach
+I started by using AI to help scaffold the initial base, and then I revised and customized each part by myself.
 
-## Learn More
+I broke the project down into small, manageable components:
 
-To learn more about Next.js, take a look at the following resources:
+- UploadCSV component
+- PieChart component
+- Sidebar for filtering and sorting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For data visualization, I came up with a general idea: count the frequency of values in a selected column and display them in a Pie Chart. This works well across different datasets.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I used Next.js with TypeScript, styled with Tailwind and shadcn/ui, and handled CSV parsing using PapaParse.
