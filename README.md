@@ -10,6 +10,20 @@ cd <project-folder>
 npm install
 npm run dev
 ```
+## 📊 Overview
+
+1. **Upload Page**  
+   - Users can upload a CSV file and preview the first 10 rows of the dataset.  
+   - After uploading, users can click the **"Visualize"** button to navigate to the visualization page.
+
+2. **Visualization Page**  
+   - A sidebar is available on the left side, where users can:
+     - ✅ Select which columns to display in the data table  
+     - 🔃 Choose a column to sort by  
+     - 🔼 Select the sort order (ascending or descending)  
+     - 🥧 Pick a column to visualize as a **Pie Chart** based on value frequency  
+   - users can click **"Showtime!!"** to generate the filtered table and chart.
+
 ## Challenges I Faced
 - I hadn’t been coding or building websites for the past 3 months, so I had to refresh a lot of things I previously knew.
 
